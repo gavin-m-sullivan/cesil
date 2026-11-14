@@ -19,3 +19,16 @@ impl Interpreter {
         }
     }
 }
+
+impl Interpreter {
+    pub fn execute(&mut self) {
+        todo!()
+    }
+
+    fn execute_in(&mut self) -> Result<(), String> {
+        todo!()
+    }
+    fn execute_out(&self) -> Result<(), String> {
+        todo!()
+    }
+}

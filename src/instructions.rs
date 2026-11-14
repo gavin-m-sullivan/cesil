@@ -25,3 +25,12 @@ pub struct Line {
     label: Option<String>,
     instruction: Instruction,
 }
+
+impl Line {
+    pub fn label(&self) -> Option<String> {
+        todo!()
+    }
+    pub fn instruction(&self) -> Instruction {
+        todo!()
+    }
+}
