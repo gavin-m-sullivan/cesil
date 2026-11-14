@@ -1,9 +1,11 @@
+#[derive(Clone)]
 pub enum Operand {
     Constant(i32),
     Label(String),
     Text(String),
 }
 
+#[derive(Clone)]
 pub enum Instruction {
     In,
     Out,
@@ -28,9 +30,9 @@ pub struct Line {
 
 impl Line {
     pub fn label(&self) -> Option<String> {
-        todo!()
+        self.label.clone()
     }
     pub fn instruction(&self) -> Instruction {
-        todo!()
+        self.instruction.clone()
     }
 }
